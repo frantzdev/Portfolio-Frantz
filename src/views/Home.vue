@@ -11,8 +11,8 @@
 
 import Header from '../components/Header'
 import Carrousel from '../components/Carrousel'
-import Footer from '../components/Footer'
 import Contact from '../components/Contact'
+import Footer from '../components/Footer'
 export default {
     name: 'Home',
     components: {

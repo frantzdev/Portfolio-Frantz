@@ -4,19 +4,19 @@
         <div class="bloc-contact row">          
                 <div class="contact-detail">
                     <div>
-                        <h6><i class="fas fa-address-card"></i>Adresse</h6>
+                        <h5><i class="fas fa-address-card"></i>Adresse</h5>
                         <p>1 rue de Franche Comte 39100 Dole</p>
                     </div>
                     <div>
-                        <h6><i class="fas fa-phone-square-alt"></i>Téléphone</h6>
+                        <h5><i class="fas fa-phone-square-alt"></i>Téléphone</h5>
                         <p>(+33) 6 16 58 56 30</p>
                     </div>
                     <div>
-                        <h6><i class="fas fa-envelope"></i>Email</h6>
+                        <h5><i class="fas fa-envelope"></i>Email</h5>
                         <p>frantz.neveu@orange.fr</p>
                     </div>
                     <div>
-                        <h6><i class="fas fa-clock"></i>Horaires</h6>
+                        <h5><i class="fas fa-clock"></i>Horaires</h5>
                         <p>Lundi - Vendredi</p>
                         <p>08h00 - 18h00</p>
                     </div>
@@ -58,7 +58,7 @@
 
 <script>
 export default {
-    name: 'Contact'
+    name: 'Contact',
 }
 </script>
 
@@ -69,7 +69,7 @@ export default {
 }
 
 #contacter {
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -83,7 +83,7 @@ h2 {
 }
 
 .bloc-contact {
-    margin: 100px 0;
+    margin: 50px 0;
     width: 70%;
     display: flex;
     flex-wrap: wrap;
@@ -148,12 +148,13 @@ small {
     font-size: 0.9em;
 }
 
-h6 {
+h5 {
+    font-size: 0.9rem;
     letter-spacing: .2rem;
     text-transform: uppercase;
 }
 
-h6 .fas, h6 .fas:hover {
+h5 .fas, h5 .fas:hover {
     color: #E74C3C;
     padding: 0 5px 0 0;
 }
