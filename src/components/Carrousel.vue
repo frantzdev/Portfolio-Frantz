@@ -88,7 +88,8 @@ export default {
   
 </script>
 
- <style>
+ <style scoped>
+ 
     .photo {
         display: flex;
         justify-content: center;
@@ -97,7 +98,7 @@ export default {
     .photo h1 {
         position: absolute;
         top: 45%;
-        color: #f1f1f1;
+        color: var(--second-text-color);
         font-size: 48px;
     }
 
@@ -123,7 +124,7 @@ export default {
         border: none;
         font-size: 2rem;
         background-color: rgba(0, 0, 0, 0);
-        color: #f1f1f1;
+        color: var(--second-text-color);
     }
 
     .left:hover , .right:hover {

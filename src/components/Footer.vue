@@ -40,19 +40,19 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 
     footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: #1f1f1f;
+        background-color: var(--dark-background-color);
     }
 
     footer img {
         padding: 0 10px;
         margin: 10px 0;
-        border-right: 1px solid #f1f1f1;
+        border-right: 1px solid var(--second-text-color);
     }
 
     .container-footer {
@@ -66,7 +66,7 @@ export default {
     footer a {
         padding: 0 10px;
         text-decoration: none;
-        color: #f1f1f1;
+        color: var(--second-text-color);
     }
 
     .link {
@@ -84,9 +84,9 @@ export default {
     }
 
     .copyright, .contact {
-        border-right: 1px solid #f1f1f1;
+        border-right: 1px solid var(--second-text-color);
         padding-right: 10px;
-        color: #f1f1f1;
+        color: var(--second-text-color);
     }
 
     .contact {
@@ -96,7 +96,7 @@ export default {
     }
 
     footer a:hover, .fab {
-        color: #f1f1f1;
+        color: var(--second-text-color);
     }
 
     .modale {       
@@ -106,15 +106,19 @@ export default {
         bottom: 10%;
         padding: 50px;
         overflow-y: auto;
-        background-color: #f1f1f1;
-        box-shadow: 10px 10px 10px grey;
-        border: 1px solid #1f1f1f;
+        background-color: var(--second-text-color);
+        box-shadow: 10px 10px 10px var(--main-text-color);
+        border: 1px solid var(--dark-background-color);
     }
 
     @media all and (max-width: 1025px) {
-    .modale {
-        width: 90%;
-        height: 300px;
+        .modale {
+            width: 90%;
+        }
     }
-}
+     @media all and (max-width: 400px) {
+        .modale {
+            bottom: 15%;
+        }
+    }    
 </style>

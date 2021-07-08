@@ -40,11 +40,11 @@ export default {
 </script>
 
 
-<style>
+<style scoped>
     header {
         display: flex;
         justify-content: center;
-        background-color: #1f1f1f;
+        background-color: var(--dark-background-color);
         width: 100%;
         position: fixed;
         z-index: 1;
@@ -54,8 +54,7 @@ export default {
         justify-content: flex-end;
     }
 
-    .navbar, .navbar-brand {
-        
+    .navbar, .navbar-brand {      
         padding: 5px 0;
         margin: 0;
         width: 70%;
@@ -68,7 +67,7 @@ export default {
     .nav-link {
             padding-left: 0.5rem!important;
             padding-right: 1.5rem!important;
-            color: #f1f1f1!important;
+            color: var(--second-text-color)!important;
     }
 
 </style>

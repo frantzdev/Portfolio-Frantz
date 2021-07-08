@@ -120,7 +120,7 @@
 
 </template>
 
-<script>
+<script scoped>
     export default {
         name: "Mentions",
         props: ['displayModale']
@@ -129,12 +129,6 @@
 
 
 <style scoped>
-
-    a, a:hover {
-        color: red;
-        text-decoration: underline;
-    }
-    
 
     .title-modale, .buttonCloseModale {
         text-align: center;
@@ -153,7 +147,7 @@
         margin-top: 20px;
         padding: 5px 30px;
         background-color: #E74C3C;
-        color: #f1f1f1;
+        color: var(--second-text-color);
         border: none;
         font-size: 1.5rem;
     }
