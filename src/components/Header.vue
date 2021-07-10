@@ -1,6 +1,6 @@
 <template>
   <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img :src="miniLogo" alt="Logo de Frantz" title="Logo miniature de Frantz">
@@ -68,6 +68,12 @@ export default {
             padding-left: 0.5rem!important;
             padding-right: 1.5rem!important;
             color: var(--second-text-color)!important;
+    }
+
+    @media all and (max-width: 768px) {
+        .navbar {
+            width: 100%;
+        }
     }
 
 </style>
