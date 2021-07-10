@@ -6,9 +6,10 @@
                 <div class="bloc-photo">
                     <img :src="item.photo" :alt="item.alt" :title="item.title">
                     <div class="bloc-description">
-                        <h6>{{item.name}}</h6>
+                        <h3>{{item.name}}</h3>
+                        <div class="space-bar"></div>
                         <p>{{item.description}}</p>
-                        <p>{{item.techno}}</p>
+                        <small><strong>Technologies : </strong>{{item.techno}}</small>
                     </div>
                 </div>
             </div>
@@ -27,47 +28,47 @@ export default {
                 {
                     photo: "/images/projet2.PNG",
                     alt: "Projet reservia",
-                    title: "Projet reservia, implantation d'une maquette",
+                    title: "Projet reservia, transformez une maquette en site web",
                     name: "Reservia",
                     description: "Intégration d'un contenu conformément à une maquette, et implémenter une interface responsive",
                     techno: "HTML5, CSS3, 100% responsive"
                 },
                 {
                     photo: "/images/projet3.PNG",
-                    alt: "",
-                    title: "",
+                    alt: "Projet Ohmyafood",
+                    title: "Projet Ohmyafood, dynamisez une page web avec des animations CSS",
                     name: "Ohmyfood",
-                    description: "Mettre en œuvre des effets CSS graphiques avancés, Assurer la cohérence graphique d'un site web",
+                    description: "Mettre en œuvre des effets CSS graphiques avancés, assurer la cohérence graphique d'un site web",
                     techno: "HTML5, SASS, 100% responsive"
                 },
                 {
                     photo: "/images/projet4.PNG",
-                    alt: "",
-                    title: "",
+                    alt: "Projet la chouette agence",
+                    title: "Projet la chouette agence, optimiser un site web existant",
                     name: "La chouette agence",
                     description: "Optimiser le référencement d'un site web et son référencement SEO, assurer l'accessibilité d'un site web",
                     techno: "Accessibilité ARIA, Google analytic"
                 },
                 {
                     photo: "/images/projet5.PNG",
-                    alt: "",
-                    title: "",
+                    alt: "Projet Orinoco",
+                    title: "Projet Orinoco, construisez un site e-commerce",
                     name: "Orinoco",
                     description: "Interagir avec un web service et gérer des événements avec JavaScript, valider des données issues de sources externes",
                     techno: "Bootstrap, Javascript côté client, 100% responsive"
                 },
                 {
                     photo: "/images/projet6.PNG",
-                    alt: "",
-                    title: "",
+                    alt: "Projet La Piquante",
+                    title: "Projet la Piquante, construisez une API sécurisée pour une application d'avis gastronomiques",
                     name: "Piquante",
-                    description: "Implémenter un modèle logique de données conformément à la réglementationMettre en œuvre des opérations CRUD de manière sécuriséeStocker des données de manière sécurisée",
-                    techno: "Node.js, Javascript côté serveur, Mongoose, 100% responsive"
+                    description: "Implémenter un modèle logique de données conformément à la réglementation, mettre en œuvre des opérations CRUD de manière sécurisée, stocker des données de manière sécurisée",
+                    techno: "Node.js, Javascript côté serveur, Mongoose,responsive"
                 },
                 {
                     photo: "/images/projet7.PNG",
-                    alt: "",
-                    title: "",
+                    alt: "Projet Groupomania",
+                    title: "Projet Groupomania, créer un reseau social d'entreprise",
                     name: "Groupomania",
                     description: "Personnaliser le contenu envoyé à un client web Authentifier un utilisateur et maintenir sa session Gérer et implémenter un stockage de données sécurisé à l'aide de SQL",
                     techno: "Vue.js, Bootstrap, Node.JS, Sequelize, SQL, 100% responsive"
@@ -108,7 +109,7 @@ export default {
 
     .bloc-photo {  
         margin: 20px 0;      
-        border: 1px solid black;
+        border: 1px solid var(--dark-background-color);
         box-shadow: -10px 10px 10px var(--main-text-color);
     }
 
@@ -120,7 +121,17 @@ export default {
     .bloc-description {
         padding: 10px 0;
         margin: 10px;
-        border-top : 1px solid black;
+        border-top : 2px solid var(--dark-background-color);
+    }
+
+    p {
+        color: var(--main-text-color);
+    }
+
+    .space-bar {
+        width: 10%;
+        border: 2px solid var(--icone-color);
+        margin-bottom: 10px;
     }
 
     @media all and (max-width: 1024px) {

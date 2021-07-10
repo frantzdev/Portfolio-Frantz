@@ -6,11 +6,11 @@
         </div>
         <div class="carrousel">
             <img src="/images/work.jpg" alt="">
-            <h1>Conception de site statique et dynamique</h1>  
+            <h1>Conception de site<br>statique et dynamique</h1>  
         </div>
         <div class="carrousel">
             <img src="/images/imac.png" alt="">
-            <h1>Compatible sur appareils mobiles</h1>  
+            <h1>Compatible sur appareils<br> mobiles</h1>  
         </div>       
         <div class="left" @mouseenter="insideLeft" @mouseout="outLeft"  @click="prevSlide">  
             <button class="button-carrousel-left" type="button" role="button"><i class="fas fa-chevron-left"></i></button>
@@ -93,6 +93,7 @@ export default {
     .photo {
         display: flex;
         justify-content: center;
+        position: relative;
     } 
     
     .photo h1 {
@@ -109,7 +110,7 @@ export default {
 
     .carrousel img {
         width: 100%;
-        height: 1000px;
+        max-height: 1000px;
         object-fit: cover;
     }
 
@@ -151,6 +152,12 @@ export default {
         padding: 20px 10px 20px 20px;
         background-color: rgba(0, 0, 0, 0.3);
         cursor: pointer;
+    }
+
+    @media all and (max-width: 450px) {
+        .photo h1 {
+            font-size: 25px;
+        }
     }
 
 </style>  

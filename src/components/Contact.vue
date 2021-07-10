@@ -136,7 +136,7 @@ export default {
     }
 
     .form-btn {
-        background-color: #E74C3C;
+        background-color: var(--icone-color);
         color: #f1f1f1;
         padding: 5px; 
         border: none;
@@ -170,7 +170,7 @@ export default {
     }
 
     h5 .fas, h5 .fas:hover {
-        color: #E74C3C;
+        color: var(--icone-color);
         padding: 0 5px 0 0;
     }
 

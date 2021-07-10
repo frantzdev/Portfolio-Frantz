@@ -14,7 +14,7 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#" title="Lien vers la page a propos">A
                             propos</a>
-                        <a class="nav-link active" href="#"
+                        <a class="nav-link active" href="#realisations"
                         title="Page des réalisations">Mes réalisations</a>
                         <a class="nav-link active" href="#contacter"
                         title="Lien vers le formulaire de contact">Me contacter</a>
@@ -68,6 +68,12 @@ export default {
             padding-left: 0.5rem!important;
             padding-right: 1.5rem!important;
             color: var(--second-text-color)!important;
+    }
+
+    @media all and (max-width: 450px) {
+        header {
+            position: initial;
+        }
     }
 
 </style>
