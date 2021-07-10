@@ -36,7 +36,7 @@
                     </div>
                     <div class="col column-form">
                         <label for="message">Message</label>
-                        <textarea name="message" class="form-group" id="message" maxlength="600" rows='4'></textarea>
+                        <textarea name="message" class="form-group" id="message" maxlength="600" rows='4' @keyup="totalCount()"></textarea>
                         <div class="alertTextarea">
                             <p class="my-1">* Les champs sont obligatoires</p>
                             <p id="count" class="my-1">0/600</p>
@@ -59,6 +59,21 @@
 <script>
 export default {
     name: 'Contact',
+
+    computed: {
+        message() {
+            return document.querySelector('#message');
+        },
+        count() {
+             return document.querySelector('#count');
+        }
+    },
+
+    methods: {
+        totalCount() {
+            this.count.textContent = this.message.value.length + "/" + "600";
+        }
+    }
 }
 </script>
 
