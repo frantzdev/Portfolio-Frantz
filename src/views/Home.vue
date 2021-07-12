@@ -2,6 +2,7 @@
 <div>
    <Header/>
    <Carrousel/>
+   <Services/>
    <Realisations/>
    <Contact/>
    <Footer/>
@@ -13,12 +14,13 @@
 import Header from '../components/Header'
 import Realisations from '../components/Realisations'
 import Carrousel from '../components/Carrousel'
+import Services from '../components/Services'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 export default {
     name: 'Home',
     components: {
-      Header, Carrousel, Realisations, Contact, Footer 
+      Header, Carrousel, Services, Realisations, Contact, Footer 
     }
 }
   

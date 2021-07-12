@@ -31,7 +31,7 @@ export default {
                     title: "Projet reservia, transformez une maquette en site web",
                     name: "Reservia",
                     description: "Intégration d'un contenu conformément à une maquette, et implémenter une interface responsive",
-                    techno: "HTML5, CSS3, 100% responsive"
+                    techno: "HTML5, CSS3, Responsive"
                 },
                 {
                     photo: "/images/projet3.PNG",
@@ -39,7 +39,7 @@ export default {
                     title: "Projet Ohmyafood, dynamisez une page web avec des animations CSS",
                     name: "Ohmyfood",
                     description: "Mettre en œuvre des effets CSS graphiques avancés, assurer la cohérence graphique d'un site web",
-                    techno: "HTML5, SASS, 100% responsive"
+                    techno: "HTML5, SASS, Responsive"
                 },
                 {
                     photo: "/images/projet4.PNG",
@@ -55,7 +55,7 @@ export default {
                     title: "Projet Orinoco, construisez un site e-commerce",
                     name: "Orinoco",
                     description: "Interagir avec un web service et gérer des événements avec JavaScript, valider des données issues de sources externes",
-                    techno: "Bootstrap, Javascript côté client, 100% responsive"
+                    techno: "Bootstrap, Javascript côté client, Responsive"
                 },
                 {
                     photo: "/images/projet6.PNG",
@@ -63,7 +63,7 @@ export default {
                     title: "Projet la Piquante, construisez une API sécurisée pour une application d'avis gastronomiques",
                     name: "Piquante",
                     description: "Implémenter un modèle logique de données conformément à la réglementation, mettre en œuvre des opérations CRUD de manière sécurisée, stocker des données de manière sécurisée",
-                    techno: "Node.js, Javascript côté serveur, Mongoose,responsive"
+                    techno: "Node.JS, Express.JS, Mongoose, Responsive"
                 },
                 {
                     photo: "/images/projet7.PNG",
@@ -71,7 +71,7 @@ export default {
                     title: "Projet Groupomania, créer un reseau social d'entreprise",
                     name: "Groupomania",
                     description: "Personnaliser le contenu envoyé à un client web Authentifier un utilisateur et maintenir sa session Gérer et implémenter un stockage de données sécurisé à l'aide de SQL",
-                    techno: "Vue.js, Bootstrap, Node.JS, Sequelize, SQL, 100% responsive"
+                    techno: "Vue.js, Node.JS, Express.JS, Sequelize, SQL, Responsive"
                 }
             ]
         }
@@ -109,8 +109,8 @@ export default {
 
     .bloc-photo {  
         margin: 20px 0;      
-        border: 1px solid var(--dark-background-color);
-        box-shadow: -10px 10px 10px var(--main-text-color);
+        /* border: 1px solid var(--dark-background-color); */
+        box-shadow: -5px 5px 30px var(--main-text-color);
     }
 
     .bloc-photo img {
@@ -140,9 +140,15 @@ export default {
         }
     }
 
-    @media (max-width: 425px) {
+    @media all and (max-width: 425px) {
         h2 {
             font-size: 3rem;
+        }
+    }
+
+     @media all and (max-width: 678px) {
+        #realisations {
+            padding: 0;
         }
     }
 </style>

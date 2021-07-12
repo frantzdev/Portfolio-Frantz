@@ -14,10 +14,12 @@
                     <div class="navbar-nav">
                         <a class="nav-link active" aria-current="page" href="#" title="Lien vers la page a propos">A
                             propos</a>
+                        <a class="nav-link active" href="#services"
+                        title="Aller à mes compétences">Services</a>    
                         <a class="nav-link active" href="#realisations"
-                        title="Page des réalisations">Mes réalisations</a>
+                        title="Aller à mes réalisations">Réalisations</a>
                         <a class="nav-link active" href="#contacter"
-                        title="Lien vers le formulaire de contact">Me contacter</a>
+                        title="Aller au formulaire de contact">Contact</a>
                         
                     </div>
                 </div>
@@ -62,6 +64,7 @@ export default {
 
     .navbar-nav {
         display: flex;
+        width: max-content;
     }
 
     .nav-link {

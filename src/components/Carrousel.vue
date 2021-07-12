@@ -1,16 +1,16 @@
 <template>
     <section class="photo">
         <div class="active carrousel">
-            <img src="/images/laptop.jpg" alt="">
+            <img src="/images/laptop.jpg" alt="image d'un ordinateur portable" title="Un ordinateur portable">
             <h1>Developpement Web<br>Frantz Neveu</h1> 
         </div>
         <div class="carrousel">
-            <img src="/images/work.jpg" alt="">
+            <img src="/images/work.jpg" alt="image d'un code sur un ecran" title="Un développeur au travail sur son ordinateur">
             <h1>Conception de site<br>statique et dynamique</h1>  
         </div>
         <div class="carrousel">
-            <img src="/images/imac.png" alt="">
-            <h1>Compatible sur appareils<br> mobiles</h1>  
+            <img src="/images/imac.png" alt="image de plusieurs telephones et tablettes" title="Ecran ordinateur, tablette et téléphone">
+            <h1>Compatible sur appareils<br>mobiles</h1>  
         </div>       
         <div class="left" @mouseenter="insideLeft" @mouseout="outLeft"  @click="prevSlide">  
             <button class="button-carrousel-left" type="button" role="button"><i class="fas fa-chevron-left"></i></button>
