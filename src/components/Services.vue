@@ -22,31 +22,30 @@
                 <div class="text-services">
                      <div class="text-competence">
                          <h4>Développements spécifiques</h4>
-                         <p>Des outils adaptés à votre coeur de métier,<br>
-                         applications & solutions personnalisées.</p>
+                         <p>Des outils adaptés à votre coeur<br>
+                         de métier, applications & solutions personnalisées.</p>
                     </div>
                     <div class="form-icone"><i class="fas fa-wrench"></i></div>                     
                 </div>
             </div>
             <div>
-                <div class="text-services">
-                     <div class="text-competence">
+                <div class="text-services-right">
+                     <div class="text-competence-right">
                          <h4>Référencement naturel</h4>
                          <p>Affichage sémantique des informations,<br>
                          des pages propres pour un référencement optimal.</p>
                     </div>
                     <div class="form-icone"><i class="far fa-check-square"></i></div>                     
                 </div>
-                <div class="text-services">
-                     <div class="text-competence">
+                <div class="text-services-right">
+                     <div class="text-competence-right">
                          <h4>Dynamisme des pages</h4>
-                         <p>Des animations de contenu non intrusives<br
-                         >pour embellir votre projet.</p>
+                         <p>Des animations de contenu<br>non intrusives pour embellir votre projet.</p>
                     </div>
                     <div class="form-icone"><i class="fas fa-sync-alt"></i></div>                     
                 </div>
-                <div class="text-services">
-                     <div class="text-competence">
+                <div class="text-services-right">
+                     <div class="text-competence-right">
                          <h4>Responsive design</h4>
                          <p>Compatible tous supports, tablette & application<br>
                          mobile.</p>
@@ -102,23 +101,39 @@ export default {
     h4 {
         color: var(--dark-background-color);
         margin-bottom: 5px;
-        padding: 0 0 0 10px;
+        padding: 0 10px 0 10px;
         font-size: 1rem;
         letter-spacing: .2rem;
         font-weight: bold;
     }
 
-    .text-services, .text-services-t {
+    .text-services {
         display: flex;
-        justify-content: space-between;
+        justify-content: flex-end;
         margin: 20px;
     }
 
     .text-competence {
         display: flex;
         flex-direction: column;
+        text-align: end;
+        margin: 0 20px;
     }
 
+    .text-services-right {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-end;
+        margin: 20px;
+    }
+
+    .text-competence-right {
+        display: flex;
+        flex-direction: column;
+        text-align: start;
+        margin: 0 20px;
+    }
+    
     .form-icone {
         padding: 16px 20px;
         border-radius: 50px;
@@ -143,6 +158,22 @@ export default {
         }
         .bloc-services {
             width: 95%;
+        }
+    }
+
+    @media all and (max-width: 1441px) {
+        .bloc-services {
+            width: 95%;
+        }
+    }
+
+    @media all and (max-width: 1024px) {
+        .text-services {          
+            flex-direction: row-reverse;
+        }
+
+        .text-competence {
+            text-align: start;
         }
     }
 </style>
