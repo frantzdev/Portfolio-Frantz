@@ -154,6 +154,7 @@ export default {
     }
 
     .form-btn:hover {
+        transition: background-color 1s;
         background-color: var(--dark-background-color);
     }
 

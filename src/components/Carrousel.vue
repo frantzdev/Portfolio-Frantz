@@ -118,6 +118,17 @@ export default {
         display: flex;
         text-align: center;
         justify-content: center;
+        animation: describ 1000ms;
+    }
+
+     @keyframes describ {
+        0% {      
+        opacity: 0.8;
+        }
+
+        100% {
+        opacity: 1;
+        }
     }
 
     .button-carrousel-left, .button-carrousel-right {
@@ -130,6 +141,7 @@ export default {
 
     .left:hover , .right:hover {
         background-color: rgba(255, 255, 255, 0.7);
+        transition: background-color 1s;
     }
 
     .fas:hover {

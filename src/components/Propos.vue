@@ -7,7 +7,7 @@
             <h3>Développeur Web Full Stack JavaScript, orienté Frontend.</h3>
             <p>Passionné par le numérique et les nouvelles technologies, je suis convaincu de leurs fort potentiel, c'est la raison pour laquelle j'ai décidé de donner un nouvel essort à ma carrière en intégrant une formation Bac +2 de développement Web chez OpenClassRooms.<br>
             De l'analyse du besoin jusqu'à sa mise en production, je réalise et conçois vos sites Web et applications mobile afin qu'ils prennent vie tout en respectant les bonnes pratiques et réglementations en vigueur.<br>
-            Mes différentes expériences passées dans des secteurs tels que le commerce et le management m'ont permise de mettre en avant la satisfaction client, en assurant des prestations de qualité.<br>                  
+            Mes différentes expériences passées dans des secteurs tels que le commerce et le management m'ont permis de mettre en avant la satisfaction client, en assurant des prestations de qualité.<br>                  
             Le détail des services ou prestations que j'assure sont disponibles un peu plus loin sur le site. Vous pourrez également y consulter les quelques projets que j'ai réalisé dans le cadre de ma formation, ainsi qu'un formulaire pour me contacter ou me soumettre une demande de devis.
             </p> 
         </div> 
@@ -50,6 +50,7 @@ export default {
     .description-propos {
         width: 56%;
         padding: 50px;
+        line-height: 1.7em;
     }
 
     h3 {

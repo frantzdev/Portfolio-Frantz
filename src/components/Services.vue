@@ -164,6 +164,7 @@ export default {
     }
 
     .form-icone:hover {
+        transition: background-color 2s;
         background-color: var(--dark-background-color);
     }
 
