@@ -4,19 +4,19 @@
         <div class="bloc-contact row">          
                 <div class="contact-detail">
                     <div>
-                        <h5><i class="fas fa-address-card"></i>Adresse</h5>
+                        <h3><i class="fas fa-address-card"></i>Adresse</h3>
                         <p>1 rue de Franche Comte 39100 Dole</p>
                     </div>
                     <div>
-                        <h5><i class="fas fa-phone-square-alt"></i>Téléphone</h5>
+                        <h3><i class="fas fa-phone-square-alt"></i>Téléphone</h3>
                         <p>(+33) 6 16 58 56 30</p>
                     </div>
                     <div>
-                        <h5><i class="fas fa-envelope"></i>Email</h5>
+                        <h3><i class="fas fa-envelope"></i>Email</h3>
                         <p>frantz.neveu@orange.fr</p>
                     </div>
                     <div>
-                        <h5><i class="fas fa-clock"></i>Horaires</h5>
+                        <h3><i class="fas fa-clock"></i>Horaires</h3>
                         <p>Lundi - Vendredi</p>
                         <p>08h00 - 18h00</p>
                     </div>
@@ -42,14 +42,15 @@
                             <p id="count" class="my-1">0/600</p>
                         </div>
                         <div>
-                            <input type="checkbox" id="checkbox">
+                            <label for="checkbox" class="label-checkbox">Accepter les conditions</label>
+                            <input type="checkbox" id="checkbox" v-model="checked" required>
                             <small>En soumettant ce formulaire, j'accepte que les informations saisies soient exploitées dans le cadre de la demande de contact et de la relation commerciale qui peut en découler.</small>
                         </div>
                     </div>
                     <div class="text-center mt-3">
                         <input type="submit" value="Envoyer" class="col-5 form-btn">
                     </div>
-        <div id="messageAlert" class="alert alert-success displayAlert mt-3">Le message est envoyé, je vous recontacte très prochainement</div>
+                    <div id="messageAlert" class="alert alert-success displayAlert mt-3">Le message est envoyé, je vous recontacte très prochainement</div>
 
                 </form>
         </div>
@@ -59,6 +60,11 @@
 <script>
 export default {
     name: 'Contact',
+    data() {
+        return {
+            checked: ""
+        }
+    },
 
     computed: {
         message() {
@@ -128,6 +134,10 @@ export default {
         justify-content: space-between;
     }
 
+    .label-checkbox {
+        display: none;
+    }
+
     small {
         padding: 10px;
         color:var(--main-text-color);
@@ -163,13 +173,13 @@ export default {
         font-size: 0.9em;
     }
 
-    h5 {
+    h3 {
         font-size: 0.9rem;
         letter-spacing: .2rem;
         text-transform: uppercase;
     }
 
-    h5 .fas, h5 .fas:hover {
+    h3 .fas, h3 .fas:hover {
         color: var(--icone-color);
         padding: 0 5px 0 0;
     }
@@ -183,9 +193,17 @@ export default {
         .bloc-contact {
             width: 100%;
         }
+    }
 
+    @media all and (max-width: 678px) {
         h2 {
-            font-size: 3em;
+            font-size: 3rem;
+        }
+
+        #contacter {
+            padding: 0;
         }
     }
+
+    
 </style>

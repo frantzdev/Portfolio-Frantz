@@ -5,7 +5,7 @@
         <div class="container-footer">
             <div class="link">
                 <div class="copyright">Copyright © 2021 Frantz Neveu</div>
-                <div class="contact" @click="switchModale = !switchModale">Politique de confidentialité</div>
+                <div class="contact" @click="switchModale = !switchModale">Mentions légales</div>
             </div>
             <div class="reseaux">
                 <a href="https://linkedin.com/in/frantz-neveu" title="Lien vers Linkedin">Linkedin <i

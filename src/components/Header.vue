@@ -3,7 +3,7 @@
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img :src="miniLogo" alt="Logo de Frantz" title="Logo miniature de Frantz">
+                    <img :src="miniLogo" alt="Logo de Frantz NEVEU" title="Retour à l'accueil">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -12,15 +12,14 @@
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                     <div class="navbar-nav">
-                        <a class="nav-link active" aria-current="page" href="#" title="Lien vers la page a propos">A
+                        <a class="nav-link active" aria-current="page" href="#propos" title="Aller à propos"><span>à</span>
                             propos</a>
                         <a class="nav-link active" href="#services"
                         title="Aller à mes compétences">Services</a>    
                         <a class="nav-link active" href="#realisations"
                         title="Aller à mes réalisations">Réalisations</a>
                         <a class="nav-link active" href="#contacter"
-                        title="Aller au formulaire de contact">Contact</a>
-                        
+                        title="Aller au formulaire de contact">Contact</a>                        
                     </div>
                 </div>
             </div>
@@ -50,6 +49,10 @@ export default {
         width: 100%;
         position: fixed;
         z-index: 1;
+    }
+
+    span {
+        text-transform: uppercase;
     }
 
     #navbarNavAltMarkup {

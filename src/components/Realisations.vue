@@ -109,8 +109,7 @@ export default {
 
     .bloc-photo {  
         margin: 20px 0;      
-        /* border: 1px solid var(--dark-background-color); */
-        box-shadow: -5px 5px 30px var(--main-text-color);
+        box-shadow: -10px 10px 50px var(--second-text-color);
     }
 
     .bloc-photo img {
@@ -146,9 +145,14 @@ export default {
         }
     }
 
-     @media all and (max-width: 678px) {
+    @media all and (max-width: 678px) {
         #realisations {
             padding: 0;
+            margin: 50px 0;
+        }
+
+         h2 {
+            font-size: 3rem;
         }
     }
 </style>

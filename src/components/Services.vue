@@ -54,6 +54,9 @@
                 </div>
             </div>     
         </div>
+        <div><a href="#contacter"><h5>N'hésitez pas à me <span>demander un devis !</span> "c'est gratuit"</h5></a></div>
+        
+        
     </section>
 </template>
 
@@ -95,7 +98,7 @@ export default {
         flex-wrap: wrap;
         justify-content: space-around;        
         width: 65%;
-        margin: 125px 0;
+        margin: 100px 0;
     }
 
     h4 {
@@ -105,6 +108,23 @@ export default {
         font-size: 1rem;
         letter-spacing: .2rem;
         font-weight: bold;
+    }
+
+    a {
+        text-decoration: none;
+        color: var(--dark-background-color);          
+    }
+
+    h5 {
+        padding: 20px;
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-align: center;
+        background-color: var(--second-text-color);  
+    }
+
+    span {
+        color: var(--icone-color);
     }
 
     .text-services {
@@ -141,6 +161,10 @@ export default {
         align-self: center;
         background-color: var(--second-text-color);
         box-shadow: 5px 5px 10px var(--main-text-color);
+    }
+
+    .form-icone:hover {
+        background-color: var(--dark-background-color);
     }
 
     .far, .fas {

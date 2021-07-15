@@ -2,6 +2,7 @@
 <div>
    <Header/>
    <Carrousel/>
+   <Propos/>
    <Services/>
    <Realisations/>
    <Contact/>
@@ -12,15 +13,16 @@
 <script>
 
 import Header from '../components/Header'
-import Realisations from '../components/Realisations'
 import Carrousel from '../components/Carrousel'
+import Propos from '../components/Propos'
 import Services from '../components/Services'
+import Realisations from '../components/Realisations'
 import Contact from '../components/Contact'
 import Footer from '../components/Footer'
 export default {
     name: 'Home',
     components: {
-      Header, Carrousel, Services, Realisations, Contact, Footer 
+      Header, Carrousel, Propos, Services, Realisations, Contact, Footer 
     }
 }
   
