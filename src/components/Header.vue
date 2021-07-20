@@ -1,6 +1,6 @@
 <template>
   <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-dark">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
                     <img :src="miniLogo" alt="Logo de Frantz NEVEU" title="Retour à l'accueil">
@@ -76,9 +76,9 @@ export default {
             color: var(--second-text-color)!important;
     }
 
-    @media all and (max-width: 450px) {
-        header {
-            position: initial;
+    @media all and (max-width: 768px) {
+        .navbar {
+            width: 100%;
         }
     }
 
