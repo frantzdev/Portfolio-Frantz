@@ -101,7 +101,7 @@ export default {
 
     .modale {       
         width: 50%;
-        height: 600px;       
+        height: 80%;       
         position: fixed;
         bottom: 10%;
         padding: 50px;

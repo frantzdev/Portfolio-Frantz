@@ -13,10 +13,10 @@
             <h1>Compatible sur appareils<br>mobiles</h1>  
         </div>       
         <div class="left" @mouseenter="insideLeft" @mouseout="outLeft"  @click="prevSlide">  
-            <button class="button-carrousel-left" type="button" role="button"><i class="fas fa-chevron-left"></i></button>
+            <button class="button-carrousel-left" type="button" role="button" alt="bouton gauche" title="Défilement en arrière"><i class="fas fa-chevron-left"></i></button>
         </div>
         <div class='right' @mouseenter="insideRight" @mouseout="outRight" @click="nextSlide">
-            <button class="button-carrousel-right" type="button" role="button"><i class="fas fa-chevron-right"></i></button>
+            <button class="button-carrousel-right" type="button" role="button" alt="bouton droit" title="Défilement en avant"><i class="fas fa-chevron-right"></i></button>
         </div>
     </section>
 </template>

@@ -13,7 +13,7 @@
                     </div>
                     <div>
                         <h3><i class="fas fa-envelope"></i>Email</h3>
-                        <p>frantz.neveu@orange.fr</p>
+                        <p>fn@frantzneveu.fr</p>
                     </div>
                     <div>
                         <h3><i class="fas fa-clock"></i>Horaires</h3>

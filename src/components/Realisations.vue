@@ -2,17 +2,18 @@
       <section id="realisations">
         <h2>Mes réalisations</h2>
         <div class="container-realisations">
-            <a href="#" class="item-realisation" v-for="item in items" :key="item.image">
-                <div class="bloc-photo">
+            <div class="item-realisation" v-for="item in items" :key="item.id">
+                <a :href="item.href"><div class="bloc-photo">
                     <img :src="item.photo" :alt="item.alt" :title="item.title">
-                    <div class="bloc-description">
+                    <div class="bloc-description" v-bind:id="item.id">
                         <h3>{{item.name}}</h3>
                         <div class="space-bar"></div>
                         <p>{{item.description}}</p>
                         <small><strong>Technologies : </strong>{{item.techno}}</small>
                     </div>
                 </div>
-            </a>
+                </a>
+            </div>
         </div>
     </section>
     
@@ -26,52 +27,64 @@ export default {
         return {
             items: [
                 {
+                    href :"https://www.frantzneveu.fr/Reservia/",
                     photo: "/images/projet2.PNG",
                     alt: "Projet reservia",
                     title: "Projet reservia, implantation d'une maquette",
                     name: "Reservia",
                     description: "Intégration d'un contenu conformément à une maquette, et implémenter une interface responsive",
-                    techno: "HTML5, CSS3, 100% responsive"
+                    techno: "HTML5, CSS3, 100% responsive",
+                    id: 2
                 },
                 {
+                    href :"https://www.frantzneveu.fr/Ohmyfood/",
                     photo: "/images/projet3.PNG",
                     alt: "",
                     title: "",
                     name: "Ohmyfood",
                     description: "Mettre en œuvre des effets CSS graphiques avancés, Assurer la cohérence graphique d'un site web",
-                    techno: "HTML5, SASS, 100% responsive"
+                    techno: "HTML5, SASS, 100% responsive",
+                    id: 3
                 },
                 {
+                    href :"https://www.frantzneveu.fr/Chouette_agence/",
                     photo: "/images/projet4.PNG",
                     alt: "",
                     title: "",
                     name: "La chouette agence",
                     description: "Optimiser le référencement d'un site web et son référencement SEO, assurer l'accessibilité d'un site web",
-                    techno: "Accessibilité ARIA, Google analytic"
+                    techno: "Accessibilité ARIA, Google analytic",
+                    id: 4
                 },
-                {
+                {   
+                    href :"https://www.frantzneveu.fr/Orinoco/",
                     photo: "/images/projet5.PNG",
                     alt: "",
                     title: "",
                     name: "Orinoco",
                     description: "Créer un plan de test pour une application, interagir avec un web service avec JavaScript, valider des données issues de sources externes ,gérer des événements JavaScript",
-                    techno: "Bootstrap, Javascript côté client, 100% responsive"
+                    techno: "Bootstrap, Javascript côté client, 100% responsive",
+                    id: 5
                 },
-                {
+                {   
+                    href :"https://www.frantzneveu.fr/Piquante/",
                     photo: "/images/projet6.PNG",
                     alt: "",
                     title: "",
                     name: "Piquante",
                     description: "Implémenter un modèle logique de données conformément à la réglementation mettre en œuvre des opérations CRUD de manière sécurisée, stocker des données de manière sécurisée",
-                    techno: "Node.js, Javascript côté serveur, Mongoose, 100% responsive"
+                    techno: "Node.js, Javascript côté serveur, Mongoose, 100% responsive",
+                    id: 6
                 },
                 {
+                    href :"https://www.frantzneveu.fr/Groupomania/",
                     photo: "/images/projet7.PNG",
                     alt: "",
                     title: "",
                     name: "Groupomania",
                     description: "Personnaliser le contenu envoyé à un client web Authentifier un utilisateur et maintenir sa session Gérer et implémenter un stockage de données sécurisé à l'aide de SQL",
-                    techno: "Vue.js, Bootstrap, Node.JS, Sequelize, SQL, 100% responsive"
+                    techno: "Vue.js, Bootstrap, Node.JS, Sequelize, SQL, 100% responsive",
+                    id: 7
                 }
             ]
         }
@@ -130,6 +143,10 @@ export default {
 
     p {
         color: var(--main-text-color);
+    }
+
+    a {
+        text-decoration: none;
     }
 
     .space-bar {
